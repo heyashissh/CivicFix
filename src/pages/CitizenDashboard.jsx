@@ -38,11 +38,11 @@ function CitizenDashboard() {
     <CitizenLayout>
       <div>
         {/* Dashboard Header */}
-        <h1 className="text-2xl font-bold text-slate-900">
+        <h1 className="text-2xl font-bold text-slate-900 dark:text-white">
           Citizen Dashboard
         </h1>
 
-        <p className="mt-1 text-sm text-slate-500">
+        <p className="mt-1 text-sm text-slate-500 dark:text-slate-400">
           Here's what's happening with your civic complaints.
         </p>
 
@@ -75,7 +75,7 @@ function CitizenDashboard() {
 
         {/* Quick Actions */}
         <div className="mt-10">
-          <h2 className="text-xl font-semibold text-slate-900">
+          <h2 className="text-xl font-semibold text-slate-900 dark:text-white">
             Quick Actions
           </h2>
 
@@ -98,7 +98,7 @@ function CitizenDashboard() {
 
         {/* Recent Complaints */}
         <div className="mt-10">
-          <h2 className="text-xl font-semibold text-slate-900">
+          <h2 className="text-xl font-semibold text-slate-900 dark:text-white">
             Recent Complaints
           </h2>
 
@@ -119,12 +119,12 @@ function CitizenDashboard() {
                 ))}
               </div>
             ) : (
-              <div className="rounded-xl border border-dashed border-slate-300 bg-white p-10 text-center">
-                <h3 className="text-lg font-semibold text-slate-900">
+              <div className="rounded-xl border border-dashed border-slate-300 bg-white p-10 text-center dark:border-slate-700 dark:bg-slate-900">
+                <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
                   No complaints yet
                 </h3>
 
-                <p className="mt-2 text-sm text-slate-500">
+                <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">
                   You haven't reported any civic issues yet.
                 </p>
               </div>
@@ -137,3 +137,4 @@ function CitizenDashboard() {
 }
 
 export default CitizenDashboard
+
